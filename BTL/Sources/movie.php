@@ -94,7 +94,7 @@ $page_title="MovieVG";
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search" onkeyup="showResult(this.value)">
+                <input class="form-control mr-sm-2" type="text" placeholder="Tìm kiếm" aria-label="Search" onkeyup="showResult(this.value)">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 <div id="livesearch"></div>
             </form>
@@ -113,11 +113,11 @@ $page_title="MovieVG";
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="logout">
                         <a class="dropdown-item" href="<?php echo $home_url; ?>logout.php" >Logout</a>
-                        <a class="dropdown-item" href="#">Đổi mật khẩu</a>
+                        <a class="dropdown-item" href="<?php echo $home_url; ?>changepassword.php">Change password</a>
                     </div>
                 </li>
             </ul>
-            <?php
+        <?php
         }
         // show login and register options here 
         // if user was not logged in, show the "login" and "register" options
