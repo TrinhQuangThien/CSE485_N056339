@@ -211,7 +211,7 @@ else if($action=='already_logged_in'){
                 <ul class="MovieList">
                     <li>
                         <article class="TPost">
-                            <a href="venom.php">
+                            <a href="film/venom.php">
                                 <img class="card-img-top" alt="venom" src="imgs/venom2.jpg" />
                                 <div class="card-block">
                                     <h5 class="card-title">
@@ -365,7 +365,7 @@ else if($action=='already_logged_in'){
                     <div class="force-overflow">
                         <ul class="list-top-film">
                             <li class="list-top-film-item">
-                                <a href="Mutants.html">
+                                <a href="film/xman.php">
                                     <div>
                                         <img class="list-top-film-item-thumb" src="imgs/x-man8.jpg" alt="x-man">
                                     </div>
