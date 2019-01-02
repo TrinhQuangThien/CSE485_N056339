@@ -7,7 +7,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="venom.php">
-                                        <img class="card-img-top" alt="venom" src="imgs/venom2.jpg" />
+                                        <img class="card-img-top" alt="venom" src="../imgs/venom2.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 Venom
@@ -22,7 +22,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="grinch.html">
-                                        <img class="card-img-top" alt="grinch" src="imgs/grinch.jpg" />
+                                        <img class="card-img-top" alt="grinch" src="../imgs/grinch.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 The Grinch
@@ -37,7 +37,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="spider-man-home-coming.html">
-                                        <img class="card-img-top" alt="spider-man-home-coming" src="imgs/spiderman1.jpg" />
+                                        <img class="card-img-top" alt="spider-man-home-coming" src="../imgs/spiderman1.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 Spider-man: Home Coming
@@ -52,7 +52,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="venom.html">
-                                        <img class="card-img-top" alt="ghostrider" src="imgs/ghostrider.jpg" />
+                                        <img class="card-img-top" alt="ghostrider" src="../imgs/ghostrider.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 Ghost Rider
@@ -67,7 +67,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="venom.html">
-                                        <img class="card-img-top" alt="transformers3" src="imgs/tran3.jpg" />
+                                        <img class="card-img-top" alt="transformers3" src="../imgs/tran3.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 Transformers 3: Dark of the Moon
@@ -82,7 +82,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="venom.html">
-                                        <img class="card-img-top" alt="transformers4" src="imgs/tran4.jpg" />
+                                        <img class="card-img-top" alt="transformers4" src="../imgs/tran4.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 Transformers 4: Age of Extinction
@@ -97,7 +97,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="venom.html">
-                                        <img class="card-img-top" alt="transformers5" src="imgs/tran5.jpg" />
+                                        <img class="card-img-top" alt="transformers5" src="../imgs/tran5.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 Transformers 5: The Last Knight
@@ -112,7 +112,7 @@
                             <li>
                                 <article class="TPost">
                                     <a href="venom.html">
-                                        <img class="card-img-top" alt="hulk" src="imgs/hulk.jpg" />
+                                        <img class="card-img-top" alt="hulk" src="../imgs/hulk.jpg" />
                                         <div class="card-block">
                                             <h5 class="card-title">
                                                 Hulk
@@ -162,7 +162,7 @@
                                     <li class="list-top-film-item">
                                         <a href="Mutants.html">
                                             <div>
-                                                <img class="list-top-film-item-thumb" src="imgs/x-man8.jpg" alt="x-man">
+                                                <img class="list-top-film-item-thumb" src="../imgs/x-man8.jpg" alt="x-man">
                                             </div>
                                             <div class="list-top-film-item-info">
                                                 <span class="title-film">X-Man: Dark Phoenix</span>
@@ -174,7 +174,7 @@
                                     <li class="list-top-film-item">
                                         <a href="Mutants.html">
                                             <div>
-                                                <img class="list-top-film-item-thumb" src="imgs/bee.jpg" alt="bumblebee">
+                                                <img class="list-top-film-item-thumb" src="../imgs/bee.jpg" alt="bumblebee">
                                             </div>
                                             <div class="list-top-film-item-info">
                                                 <span class="title-film">Bumblebee</span>
@@ -186,7 +186,7 @@
                                     <li class="list-top-film-item">
                                         <a href="Mutants.html">
                                             <div>
-                                                <img class="list-top-film-item-thumb" src="imgs/avenger4.jpg" alt="avengers4">
+                                                <img class="list-top-film-item-thumb" src="../imgs/avenger4.jpg" alt="avengers4">
                                             </div>
                                             <div class="list-top-film-item-info">
                                                 <span class="title-film">Avengers 4: Annihilation</span>
@@ -198,7 +198,7 @@
                                     <li class="list-top-film-item">
                                         <a href="Mutants.html">
                                             <div>
-                                                <img class="list-top-film-item-thumb" src="imgs/alita.jpg" alt="alita">
+                                                <img class="list-top-film-item-thumb" src="../imgs/alita.jpg" alt="alita">
                                             </div>
                                             <div class="list-top-film-item-info">
                                                 <span class="title-film">Alita: Thiên thần chiến binh</span>
@@ -210,7 +210,7 @@
                                     <li class="list-top-film-item">
                                         <a href="Mutants.html">
                                             <div>
-                                                <img class="list-top-film-item-thumb" src="imgs/aqua.jpg" alt="aquaman">
+                                                <img class="list-top-film-item-thumb" src="../imgs/aqua.jpg" alt="aquaman">
                                             </div>
                                             <div class="list-top-film-item-info">
                                                 <span class="title-film">Aquaman: Đế vương Atlatis</span>
@@ -222,7 +222,7 @@
                                     <li class="list-top-film-item">
                                         <a href="Mutants.html">
                                             <div>
-                                                <img class="list-top-film-item-thumb" src="imgs/godzilla.jpg" alt="godzilla">
+                                                <img class="list-top-film-item-thumb" src="../imgs/godzilla.jpg" alt="godzilla">
                                             </div>
                                             <div class="list-top-film-item-info">
                                                 <span class="title-film">Godzilla: King of the Monsters</span>
@@ -234,7 +234,7 @@
                                     <li class="list-top-film-item">
                                         <a href="Mutants.html">
                                             <div>
-                                                <img class="list-top-film-item-thumb" src="imgs/spiderman.jpg" alt="spider-man-far-from-home">
+                                                <img class="list-top-film-item-thumb" src="../imgs/spiderman.jpg" alt="spider-man-far-from-home">
                                             </div>
                                             <div class="list-top-film-item-info">
                                                 <span class="title-film">Spider Man: Far From Home</span>
