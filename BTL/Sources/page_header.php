@@ -16,13 +16,13 @@ $page_title="MovieVG";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo "$page_title"; ?></title>
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/icon.ico">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.php">
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../imgs/icon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.php">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
     <!-- livesearch -->
     <script>
     function showResult(str) {
@@ -53,7 +53,7 @@ $page_title="MovieVG";
     <!-- menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand" href="movie.php">
-            <img src="imgs/logo.png" alt="Trang Chủ">
+            <img src="../imgs/logo.png" alt="Trang Chủ">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">menu</span>
