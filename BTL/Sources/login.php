@@ -26,6 +26,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
      
     // initialize objects
     $user = new User($db);
+    //check if username and password in the database
+    $user->username=$_POST['username'];
      
     // check if email exists, also get user details using this emailExists() method
     $username_exists = $user->usernameExists();
@@ -39,14 +41,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
      
         // if it is, set the session value to true
         $_SESSION['logged_in'] = true;
-        $_SESSION['user_id'] = $user->id;
+        $_SESSION['users_id'] = $user->users_id;
         $_SESSION['access_level'] = $user->access_level;
         $_SESSION['username'] = htmlspecialchars($user->username, ENT_QUOTES, 'UTF-8') ;
-        $_SESSION['lastname'] = $user->lastname;
-     
+           
         // if access level is 'Admin', redirect to admin section
         if($user->access_level=='Admin'){
-            header("Location: {$home_url}admin/index.php?action=login_success");
+            header("Location: {$home_url}admin.php?action=login_success");
         }
      
         // else, redirect only to 'Customer' section
