@@ -30,11 +30,39 @@ body{
 	margin-left: 70px;
 }
 
+.form-control[type=text] {
+	position: relative;
+	background-repeat: no-repeat;
+	background-image: url('../imgs/search_icon.png');
+}
+
+.form-control:focus{
+	border: 1px solid orangered;
+	box-shadow: none;
+}
+
+#livesearch{
+	position: absolute;
+	margin-top: 50px;
+	background-color: #343a40;
+	z-index: 1;
+}
+
+#livesearch>a{
+	color: pink;
+}
+
+#livesearch>a:hover{
+	color: hotpink;
+	text-decoration: none;
+}
+
 .buttonl{
 	color: #212529;
   	background-color: #ffc107;
   	border-color: #ffc107;
   	border-radius: 0.25rem;
+  	cursor: pointer;
 }
 .buttonl:hover{
 	color: #212529;
@@ -48,6 +76,7 @@ body{
   	border-color: #dc3545;
   	border-radius: 0.25rem;
   	margin-left: 5px;
+  	cursor: pointer;
 }
 .buttong:hover{
 	color: #fff;
@@ -126,7 +155,7 @@ body{
 
 }
 .TPost{
-	border: 2px solid #999;
+	border: 1px solid #999;
 	background-color: #1b1b1b;
 	box-sizing: border-box;
 	width: 167.5px;
@@ -250,4 +279,11 @@ body{
 .py-3{
 	background-color: #131313;
 	border-top: 2px solid #dacb46;
+}
+
+#changepass{
+	margin: 100px 0 0 550px;
+}
+.pass{	
+	padding-top: 8px;
 }
