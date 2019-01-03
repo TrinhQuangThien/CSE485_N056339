@@ -1,0 +1,13 @@
+<<?php 
+	session_start();
+	if($_SESSION["liver"]==2)
+	{
+		require("form/header.php");
+		require("form/footer.php");
+	}
+	else 
+	{
+		header("location:../movie.php");
+		exit();
+	}
+ ?>

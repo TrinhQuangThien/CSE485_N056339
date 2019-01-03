@@ -1,0 +1,76 @@
+<?php 
+	session_start();
+	require('from/header.php');
+
+	$id=$_GET("id");
+
+	$loi=array();
+	$loi["name"]=$loi["mess"]=NULL;
+	$name=$mess=NULL;
+	if(isset($_POST[ok]))
+	{
+		// đã nhạp tiê đề chưa
+		if(empty($_POST["txtname"]))
+		{
+			$loi["name"]="Xin vui lòng nhập tên";
+		}
+		else
+		{
+			$name=$_POST["txtname"];
+		}
+		// xem cos nhaap mess chuwa
+		
+		if (empty($_POST["txtmess"]))
+		 {
+			$loi["mess"]="Xin vui lòng nhập mess";
+		}
+		else
+		{
+			$mess=$_POST("txtname");
+		}
+		if($name&&$mess)
+		{
+
+		}
+
+
+
+
+ ?>
+
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<div id="comment">
+	<fieldset>
+		<legend>Comment</legend>
+		<form action="movie.php" method="post">
+			<table>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" size="25" name="txtname" value="<?php echo $loi['name'];?>"></td>
+				</tr>
+				<tr>
+					<td>Mess</td>
+					<td><textarea cols="text" rows="5" name="txtmess" ><?php echo $loi['mess'];?></textarea></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit" value="Submit" name="ok"></td>
+				</tr>
+			</table> 
+			
+		</form>
+	</fieldset>
+	
+</div>
+
+
+</body>
+</html>
