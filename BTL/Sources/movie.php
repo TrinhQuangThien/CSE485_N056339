@@ -3,11 +3,6 @@
 include_once "config/core.php";
 // set page title
 $page_title="MovieVG";
-
-// include login checker
-
-// include page header HTML
-
 ?>
 
 <!DOCTYPE html>
@@ -25,26 +20,26 @@ $page_title="MovieVG";
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- livesearch -->
     <script>
-    function showResult(str) {
-        if (str.length==0) { 
-            document.getElementById("livesearch").innerHTML="";
-            document.getElementById("livesearch").style.border="0px";
-            return;
-        }
-        if (window.XMLHttpRequest) {
+        function showResult(str) {
+            if (str.length==0) { 
+                document.getElementById("livesearch").innerHTML="";
+                document.getElementById("livesearch").style.border="0px";
+                return;
+            }
+            if (window.XMLHttpRequest) {
             // code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp=new XMLHttpRequest();
         } else {  // code for IE6, IE5
             xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
         }
-    xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
-        document.getElementById("livesearch").innerHTML=this.responseText;
-        document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+        xmlhttp.onreadystatechange=function() {
+            if (this.readyState==4 && this.status==200) {
+                document.getElementById("livesearch").innerHTML=this.responseText;
+                document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+            }
         }
-    }
-    xmlhttp.open("GET","livesearch.php?q="+str,true);
-    xmlhttp.send();
+        xmlhttp.open("GET","livesearch.php?q="+str,true);
+        xmlhttp.send();
     }
 </script>
 
@@ -117,7 +112,7 @@ $page_title="MovieVG";
                     </div>
                 </li>
             </ul>
-        <?php
+            <?php
         }
         // show login and register options here 
         // if user was not logged in, show the "login" and "register" options
@@ -133,12 +128,12 @@ $page_title="MovieVG";
                 <li <?php echo $page_title=="Register" ? "class='active'" : ""; ?>>
                     <a href="<?php echo $home_url; ?>register.php">
                       <button class="buttong">Register</button>
-                    </a>
-                </li>
-            </ul>
-        <?php
-        }
-        ?>
+                  </a>
+              </li>
+          </ul>
+          <?php
+      }
+      ?>
   </nav>
   <br>
   <?php
@@ -178,14 +173,14 @@ else if($action=='already_logged_in'){
         <div class="carousel-item">
             <img class="d-block w-100" src="imgs/ban2.jpg" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Thạch đại gia</h5>
+                <h5>Thạch Đại Gia</h5>
                 <p>4.903.609 lượt xem</p>
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="imgs/ban3.jpg" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Stars war</h5>
+                <h5>Stars War</h5>
                 <p>6.065.280 lượt xem</p>
             </div>
         </div>
@@ -199,11 +194,10 @@ else if($action=='already_logged_in'){
         <span class="sr-only">Next</span>
     </a>
 </div>
-<br><br>
+<br><br><br>
 
 <!-- Main -->
-
-<div class="container">
+<div class="container" style="padding-bottom: 100px;">
     <div class="row">
         <div class="col-md-8">
             <section id="single-home">
@@ -218,7 +212,7 @@ else if($action=='already_logged_in'){
                                         Venom
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        112 phút - 4720 viewed
                                     </p>
                                 </div>
                             </a>
@@ -233,7 +227,7 @@ else if($action=='already_logged_in'){
                                         The Grinch
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        103 phút - 569 viewed
                                     </p>
                                 </div>
                             </a>
@@ -248,7 +242,7 @@ else if($action=='already_logged_in'){
                                         Spider-man: Home Coming
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        124 phút - 8262 viewed
                                     </p>
                                 </div>
                             </a>
@@ -263,7 +257,7 @@ else if($action=='already_logged_in'){
                                         Ghost Rider
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        138 phút - 145 viewed
                                     </p>
                                 </div>
                             </a>
@@ -278,7 +272,7 @@ else if($action=='already_logged_in'){
                                         Transformers 3: Dark of the Moon
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        154 phút - 982376 viewed
                                     </p>
                                 </div>
                             </a>
@@ -293,7 +287,7 @@ else if($action=='already_logged_in'){
                                         Transformers 4: Age of Extinction
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        149 phút - 827301 viewed
                                     </p>
                                 </div>
                             </a>
@@ -308,7 +302,7 @@ else if($action=='already_logged_in'){
                                         Transformers 5: The Last Knight
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        165 phút - 702726 viewed
                                     </p>
                                 </div>
                             </a>
@@ -323,7 +317,7 @@ else if($action=='already_logged_in'){
                                         Hulk
                                     </h5>
                                     <p class="card-text">
-                                        1 tuần trước - 1000 lượt xem
+                                        133 phút - 23872 viewed
                                     </p>
                                 </div>
                             </a>
@@ -371,8 +365,8 @@ else if($action=='already_logged_in'){
                                     </div>
                                     <div class="list-top-film-item-info">
                                         <span class="title-film">X-Man: Dark Phoenix</span>
-                                        <span class="time-film">107 phút</span>
-                                        <span class="view-film">Lượt xem: 120000</span>
+                                        <span class="time-film">2p 10s</span>
+                                        <span class="view-film">Lượt xem: 120874</span>
                                     </div>
                                 </a>
                             </li>
@@ -383,8 +377,8 @@ else if($action=='already_logged_in'){
                                     </div>
                                     <div class="list-top-film-item-info">
                                         <span class="title-film">Bumblebee</span>
-                                        <span class="time-film">107 phút</span>
-                                        <span class="view-film">Lượt xem: 120000</span>
+                                        <span class="time-film">2p 55s</span>
+                                        <span class="view-film">Lượt xem: 238</span>
                                     </div>
                                 </a>
                             </li>
@@ -395,8 +389,8 @@ else if($action=='already_logged_in'){
                                     </div>
                                     <div class="list-top-film-item-info">
                                         <span class="title-film">Avengers 4: Annihilation</span>
-                                        <span class="time-film">107 phút</span>
-                                        <span class="view-film">Lượt xem: 120000</span>
+                                        <span class="time-film">1p 34s</span>
+                                        <span class="view-film">Lượt xem: 87236</span>
                                     </div>
                                 </a>
                             </li>
@@ -407,8 +401,8 @@ else if($action=='already_logged_in'){
                                     </div>
                                     <div class="list-top-film-item-info">
                                         <span class="title-film">Alita: Thiên thần chiến binh</span>
-                                        <span class="time-film">107 phút</span>
-                                        <span class="view-film">Lượt xem: 120000</span>
+                                        <span class="time-film">2 phút</span>
+                                        <span class="view-film">Lượt xem: 2345</span>
                                     </div>
                                 </a>
                             </li>
@@ -419,7 +413,7 @@ else if($action=='already_logged_in'){
                                     </div>
                                     <div class="list-top-film-item-info">
                                         <span class="title-film">Aquaman: Đế vương Atlatis</span>
-                                        <span class="time-film">107 phút</span>
+                                        <span class="time-film">1p 49s</span>
                                         <span class="view-film">Lượt xem: 120000</span>
                                     </div>
                                 </a>
@@ -431,7 +425,7 @@ else if($action=='already_logged_in'){
                                     </div>
                                     <div class="list-top-film-item-info">
                                         <span class="title-film">Godzilla: King of the Monsters</span>
-                                        <span class="time-film">107 phút</span>
+                                        <span class="time-film">3p 05s</span>
                                         <span class="view-film">Lượt xem: 120000</span>
                                     </div>
                                 </a>
@@ -443,7 +437,7 @@ else if($action=='already_logged_in'){
                                     </div>
                                     <div class="list-top-film-item-info">
                                         <span class="title-film">Spider Man: Far From Home</span>
-                                        <span class="time-film">107 phút</span>
+                                        <span class="time-film">2p 29s</span>
                                         <span class="view-film">Lượt xem: 120000</span>
                                     </div>
                                 </a>
@@ -451,11 +445,11 @@ else if($action=='already_logged_in'){
                             <li class="list-top-film-item">
                                 <a href="Mutants.html">
                                     <div>
-                                        <img class="list-top-film-item-thumb" src="" alt="">
+                                        <img class="list-top-film-item-thumb" src="imgs/dragon.jpg" alt="">
                                     </div>
                                     <div class="list-top-film-item-info">
-                                        <span class="title-film">Mutants</span>
-                                        <span class="time-film">107 phút</span>
+                                        <span class="title-film">Bí kíp luyện rồng</span>
+                                        <span class="time-film">2p 58s</span>
                                         <span class="view-film">Lượt xem: 120000</span>
                                     </div>
                                 </a>
@@ -463,11 +457,11 @@ else if($action=='already_logged_in'){
                             <li class="list-top-film-item">
                                 <a href="Mutants.html">
                                     <div>
-                                        <img class="list-top-film-item-thumb" src="" alt="">
+                                        <img class="list-top-film-item-thumb" src="imgs/kidking.jpg" alt="">
                                     </div>
                                     <div class="list-top-film-item-info">
-                                        <span class="title-film">Mutants</span>
-                                        <span class="time-film">107 phút</span>
+                                        <span class="title-film">Cậu bé và sứ mệnh thiên tử</span>
+                                        <span class="time-film">1p 43s</span>
                                         <span class="view-film">Lượt xem: 120000</span>
                                     </div>
                                 </a>
@@ -475,11 +469,11 @@ else if($action=='already_logged_in'){
                             <li class="list-top-film-item">
                                 <a href="Mutants.html">
                                     <div>
-                                        <img class="list-top-film-item-thumb" src="" alt="">
+                                        <img class="list-top-film-item-thumb" src="imgs/room.jpg" alt="">
                                     </div>
                                     <div class="list-top-film-item-info">
-                                        <span class="title-film">Mutants</span>
-                                        <span class="time-film">107 phút</span>
+                                        <span class="title-film">Căn phòng tử thần</span>
+                                        <span class="time-film">2p 18s</span>
                                         <span class="view-film">Lượt xem: 120000</span>
                                     </div>
                                 </a>
@@ -498,31 +492,17 @@ else if($action=='already_logged_in'){
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center"> 
-                <p> <a href="https://goo.gl/maps/AUq7b9W7yYJ2" target="_blank"> Fake street, 100 NYC - 20179, USA</a> </p>
-                <p> <a href="tel:+246 - 542 550 5462">+1 - 256 845 87 86</a> </p>
-                <p class="mb-0"> <a href="mailto:info@pingendo.com">info@pingendo.com</a> </p>
+                <p> <a href="https://goo.gl/maps/AUq7b9W7yYJ2" target="_blank">MovieVG</a> </p>
+                <p> <a href="#">Xem phim mới chất lượng cao</a> </p>
+                <p><a href="">Hỗ trợ: +84 123456789</a></p>    
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p class="mb-0">© 2014-2019 Movie. All rights reserved</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 d-flex align-items-center justify-content-center my-3"> <a href="#">
-                <i class="d-block fa fa-facebook-official text-muted fa-lg mr-2"></i>
-            </a> <a href="#">
-                <i class="d-block fa fa-instagram text-muted fa-lg mx-2"></i>
-            </a> <a href="#">
-                <i class="d-block fa fa-google-plus-official text-muted fa-lg mx-2"></i>
-            </a> <a href="#">
-                <i class="d-block fa fa-pinterest-p text-muted fa-lg mx-2"></i>
-            </a> 
-            <i class="d-block fa fa-twitter text-muted fa-lg ml-2"></i>
-        </a> 
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12 text-center">
-        <p class="mb-0">© 2014-2018 Movie. All rights reserved</p>
-    </div>
-</div>
-</div>
 </div>
 
 </body>

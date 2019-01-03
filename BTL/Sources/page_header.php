@@ -52,7 +52,7 @@ $page_title="MovieVG";
 <body>
     <!-- menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand" href="movie.php">
+        <a class="navbar-brand" href="../movie.php">
             <img src="../imgs/logo.png" alt="Trang Chủ">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

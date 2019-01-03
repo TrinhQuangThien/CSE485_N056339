@@ -32,11 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // check if email exists, also get user details using this emailExists() method
     $username_exists = $user->usernameExists();
    
-    // login validation will be here
     // validate login
-    
-    //echo"$user->username";
-    if (!$username_exists) echo"co";
     if ($username_exists && $user->username=$_POST['username']){
      
         // if it is, set the session value to true
@@ -47,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
            
         // if access level is 'Admin', redirect to admin section
         if($user->access_level=='Admin'){
-            header("Location: {$home_url}admin.php?action=login_success");
+            header("Location: {$home_url}admin/list_user.php?action=login_success");
         }
      
         // else, redirect only to 'Customer' section
@@ -92,20 +88,20 @@ echo "<div class='container mt-5'>";
         // tell the user if access denied
         if($access_denied){
             echo "<div class='alert alert-danger margin-top-40' role='alert'>
-                Access Denied.<br /><br />
-                Your username or password maybe incorrect
-            </div>";
+                    Sai tài khoản hoặc mật khẩu<br>
+                    Mời nhập lại
+                </div>";
         }
 
         echo "<form class='form-signin' action='" . htmlspecialchars($_SERVER["PHP_SELF"]) . "' method='post'>";
 
             echo "<div class='form-group'>";
                 echo "<label for='username'>Username</label>";
-                echo "<input class='form-control' type='text' name='username' placeholder='Username' />";
+                echo "<input class='form-control' type='text' name='username' placeholder='Enter Username' />";
             echo "</div>";
             echo "<div class='form-group'>";
                 echo "<label for='password'>Password</label>";
-                echo "<input class='form-control' type='password' name='password' placeholder='Password' />";
+                echo "<input class='form-control' type='password' name='password' placeholder='Enter Password' />";
             echo "</div>";
 
             echo "<input type='submit' class='btn btn-success btn-block' name='login' value='Đăng Nhập' />";
@@ -115,7 +111,6 @@ echo "<div class='container mt-5'>";
         echo "</div>";
 
         echo "<div class='col-md-6'>";
-            echo "<!-- isi dengan sesuatu di sini -->";
         echo "</div>";
 
     echo "</div>";
